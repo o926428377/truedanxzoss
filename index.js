@@ -81,9 +81,9 @@ var redeem_template = '<div class="container p-3 justify-content-center text-cen
 "</qrcode-stream>"+
 "</div></div>"+
 '<div class="p-2">' +
-'<img class="card-img-top" src="truedan.png" style="object-fit: cover;width: 100px;"></img>'+
-'<span> X </span>' +
 '<img class="card-img-top" src="ZOSS_logo.png" style="object-fit: cover;width: 100px;"></img>'+
+'<span> X </span>' +
+'<img class="card-img-top" src="truedan.png" style="object-fit: cover;width: 100px;"></img>'+
 '<h2 slot="title" class="text-info p-2" style="position:relative;" v-if="tartget_shop">{{ all_shops_dict[target_city][\'shops\'][tartget_shop].shop_name }}</h2>' +
 '</div>' +
 '<div class="p-2">' +
