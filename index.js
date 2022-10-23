@@ -188,8 +188,12 @@ Vue.component('zp_redeem', {
                           if (result.isConfirmed || result.isDenied) {
                             self.turnCameraOff();
                             Swal.fire({
-                                title: '兌換完成',
-                                icon: "info",
+                                showCloseButton: true,
+                                showConfirmButton: false,
+                                html: '<div><sapn class="badge bg-info rounded-pill text-light px-5 py-2 fs-2">兌換完成</span></div>'+
+                                '<div class="p-2"><img class="card-img-top" src="ZOSS_logo.png" style="object-fit: cover;width: 150;"></img></div>'+
+                                '<div class="p-2"><img class="card-img-top" src="truedan_big.png" style="object-fit: cover;width: 150;"></img></div>'+
+                                '<div class="p-3"><sapn class="text-decoration-underline">歡迎再次光臨</span></div>',
                             })
                           } else {
                             self.turnCameraOn();
